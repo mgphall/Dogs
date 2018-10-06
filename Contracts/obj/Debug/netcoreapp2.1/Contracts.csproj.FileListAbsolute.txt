@@ -1,0 +1,14 @@
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\bin\Debug\netcoreapp2.1\Contracts.deps.json
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\bin\Debug\netcoreapp2.1\Contracts.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\bin\Debug\netcoreapp2.1\Contracts.pdb
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\obj\Debug\netcoreapp2.1\Contracts.csproj.CoreCompileInputs.cache
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfoInputs.cache
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\obj\Debug\netcoreapp2.1\Contracts.AssemblyInfo.cs
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\obj\Debug\netcoreapp2.1\Contracts.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\obj\Debug\netcoreapp2.1\Contracts.pdb
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\obj\Debug\netcoreapp2.1\Contracts.csprojAssemblyReference.cache
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\bin\Debug\netcoreapp2.1\Entities.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\bin\Debug\netcoreapp2.1\Entities.pdb
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Contracts\obj\Debug\netcoreapp2.1\Contracts.csproj.CopyComplete

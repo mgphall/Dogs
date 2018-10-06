@@ -1,0 +1,16 @@
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\bin\Debug\netcoreapp2.1\Contracts.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\bin\Debug\netcoreapp2.1\Entities.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\bin\Debug\netcoreapp2.1\Contracts.pdb
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\bin\Debug\netcoreapp2.1\Entities.pdb
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Repository\obj\Debug\netcoreapp2.1\Repository.pdb

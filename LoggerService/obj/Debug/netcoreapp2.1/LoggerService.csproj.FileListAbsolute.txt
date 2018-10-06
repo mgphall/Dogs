@@ -1,0 +1,16 @@
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\bin\Debug\netcoreapp2.1\LoggerService.deps.json
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\bin\Debug\netcoreapp2.1\LoggerService.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\bin\Debug\netcoreapp2.1\LoggerService.pdb
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\bin\Debug\netcoreapp2.1\Contracts.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\bin\Debug\netcoreapp2.1\Entities.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\bin\Debug\netcoreapp2.1\Contracts.pdb
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\bin\Debug\netcoreapp2.1\Entities.pdb
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.csprojAssemblyReference.cache
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.csproj.CoreCompileInputs.cache
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.AssemblyInfoInputs.cache
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.AssemblyInfo.cs
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.csproj.CopyComplete
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.dll
+c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\LoggerService\obj\Debug\netcoreapp2.1\LoggerService.pdb
