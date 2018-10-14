@@ -1,0 +1,6 @@
+
+*.dll
+
+\.vs/DogBreedServer/v15/Server/sqlite3/
+
+Contracts/bin/Debug/netcoreapp2\.1/

@@ -24,9 +24,9 @@
         {
             try
             {
-                var breeds = _repository.Groups.GetAllGroupss();
+                var breeds = _repository.Groups.GetAllGroups();
 
-                _logger.LogInfo($"Returned all owners from database.");
+                _logger.LogInfo($"Returned all groups from database.");
 
                 return Ok(breeds);
             }
@@ -38,76 +38,76 @@
         }
 
 
-        [HttpGet("{id}", Name = "OwnerById")]
+        [HttpGet("{id}", Name = "GroupsById")]
         public IActionResult GetGroupsById(Guid id)
         {
             try
             {
-                var owner = _repository.Groups.GetGroupsById(id);
+                var group = _repository.Groups.GetGroupsById(id);
 
-                if (owner.GroupName == null)
+                if (group.GroupName == null)
                 {
-                    _logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+                    _logger.LogError($"group with id: {id}, hasn't been found in db.");
                     return NotFound();
                 }
                 else
                 {
-                    _logger.LogInfo($"Returned owner with id: {id}");
-                    return Ok(owner);
+                    _logger.LogInfo($"Returned group with id: {id}");
+                    return Ok(group);
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong inside GetOwnerById action: {ex.Message}");
+                _logger.LogError($"Something went wrong inside GetgroupById action: {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
         }
 
-        [HttpGet("{id}/group")]
-        public IActionResult GetOwnerWithDetails(Guid id)
+        [HttpGet("{id}/Breeds")]
+        public IActionResult GetGroupWithDetails(Guid id)
         {
             try
             {
-                var owner = _repository.Groups.GetGroupsWithDetails(id);
+                var group = _repository.Groups.GetGroupsWithDetails(id);
 
-                if (owner.Groups.GroupName == null)
+                if (group.GroupName == null)
                 {
-                    _logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+                    _logger.LogError($"group with id: {id}, hasn't been found in db.");
                     return NotFound();
                 }
                 else
                 {
-                    _logger.LogInfo($"Returned owner with details for id: {id}");
-                    return Ok(owner);
+                    _logger.LogInfo($"Returned group with details for id: {id}");
+                    return Ok(group);
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong inside GetOwnerWithDetails action: {ex.Message}");
+                _logger.LogError($"Something went wrong inside GetGroupWithDetails action: {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
         }
 
         [HttpPost]
-        public IActionResult CreateGroup([FromBody]Groups owner)
+        public IActionResult CreateGroup([FromBody]Groups group)
         {
             try
             {
-                if (owner == null)
+                if (group == null)
                 {
-                    _logger.LogError("Owner object sent from client is null.");
-                    return BadRequest("Owner object is null");
+                    _logger.LogError("group object sent from client is null.");
+                    return BadRequest("group object is null");
                 }
 
                 if (!ModelState.IsValid)
                 {
-                    _logger.LogError("Invalid owner object sent from client.");
+                    _logger.LogError("Invalid group object sent from client.");
                     return BadRequest("Invalid model object");
                 }
 
-                _repository.Groups.CreateGroup(owner);
+                _repository.Groups.CreateGroup(group);
 
-                return CreatedAtRoute("OwnerById", new { id = owner.GroupdId }, owner);
+                return CreatedAtRoute("GroupsById", new { id = group.GroupdId }, group);
             }
             catch (Exception ex)
             {
@@ -115,37 +115,38 @@
                 return StatusCode(500, "Internal server error");
             }
         }
+
         [HttpPut("{id}")]
-        public IActionResult UpdateOwner(Guid id, [FromBody]Groups owner)
+        public IActionResult UpdateGroup(Guid id, [FromBody]Groups group)
         {
             try
             {
-                if (owner == null)
+                if (group == null)
                 {
-                    _logger.LogError("Owner object sent from client is null.");
-                    return BadRequest("Owner object is null");
+                    _logger.LogError("group object sent from client is null.");
+                    return BadRequest("group object is null");
                 }
 
                 if (!ModelState.IsValid)
                 {
-                    _logger.LogError("Invalid owner object sent from client.");
+                    _logger.LogError("Invalid group object sent from client.");
                     return BadRequest("Invalid model object");
                 }
 
-                var dbOwner = _repository.Groups.GetGroupsById(id);
-                if (dbOwner == null)
+                var dbgroup = _repository.Groups.GetGroupsById(id);
+                if (dbgroup == null)
                 {
-                    _logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+                    _logger.LogError($"group with id: {id}, hasn't been found in db.");
                     return NotFound();
                 }
 
-                _repository.Groups.UpdateGroup(dbOwner, owner);
+                _repository.Groups.UpdateGroup(dbgroup, group);
 
                 return NoContent();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong inside UpdateOwner action: {ex.Message}");
+                _logger.LogError($"Something went wrong inside UpdateGroup action: {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
         }
@@ -155,26 +156,26 @@
         {
             try
             {
-                var owner = _repository.Groups.GetGroupsById(id);
-                if (owner == null)
+                var group = _repository.Groups.GetGroupsById(id);
+                if (group == null)
                 {
-                    _logger.LogError($"Owner with id: {id}, hasn't been found in db.");
+                    _logger.LogError($"group with id: {id}, hasn't been found in db.");
                     return NotFound();
                 }
 
                 if (_repository.Breeds.BreedsByGroups(id).Any())
                 {
-                    _logger.LogError($"Cannot delete owner with id: {id}. It has related accounts. Delete those accounts first");
-                    return BadRequest("Cannot delete owner. It has related accounts. Delete those accounts first");
+                    _logger.LogError($"Cannot delete group with id: {id}. It has related accounts. Delete those accounts first");
+                    return BadRequest("Cannot delete group. It has related breeds. Delete those accounts first");
                 }
 
-                _repository.Groups.DeleteGroup(owner);
+                _repository.Groups.DeleteGroup(group);
 
                 return NoContent();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong inside DeleteOwner action: {ex.Message}");
+                _logger.LogError($"Something went wrong inside Deletegroup action: {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
         }

@@ -1,14 +1,16 @@
 ﻿using Entities.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Contracts
 {
     public interface IBreedsRepository : IRepositoryBase<Breeds>
     {
         IEnumerable<Breeds> GetAllBreeds();
-        Breeds GetBreedsById(int ownerId);
-        IEnumerable<Breeds> BreedsByGroups(Guid ownerId);
+        Breeds GetBreedsById(Guid groupId);
+        IEnumerable<Breeds> BreedsByGroups(Guid groupId);
+        void CreateBreed(Breeds breed);
+        void DeleteBreed(Breeds group);
+        void UpdateBreed(Breeds dbbreed, Breeds breed);
     }
 }

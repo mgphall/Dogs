@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogBreedServer", "DogBreedServer\DogBreedServer.csproj", "{26C6625A-83E7-43B1-8283-C2E0400A0009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DogBreedServer", "DogBreedServer\DogBreedServer.csproj", "{26C6625A-83E7-43B1-8283-C2E0400A0009}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{F231824A-9CAF-44A0-8576-F26F21F4CE3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{F231824A-9CAF-44A0-8576-F26F21F4CE3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{764DD0DB-E35F-4CEC-AFA0-2545EA2E11B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{764DD0DB-E35F-4CEC-AFA0-2545EA2E11B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{696447BD-AB56-4914-90EA-970C55356C7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{696447BD-AB56-4914-90EA-970C55356C7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{8A2F3CEF-8492-48A4-B2EE-8064382D3E8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{8A2F3CEF-8492-48A4-B2EE-8064382D3E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogBreedServerTests", "DogBreedServerTests\DogBreedServerTests.csproj", "{D3199991-73DA-417B-8724-C45195878C95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8A2F3CEF-8492-48A4-B2EE-8064382D3E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A2F3CEF-8492-48A4-B2EE-8064382D3E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A2F3CEF-8492-48A4-B2EE-8064382D3E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3199991-73DA-417B-8724-C45195878C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3199991-73DA-417B-8724-C45195878C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3199991-73DA-417B-8724-C45195878C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3199991-73DA-417B-8724-C45195878C95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

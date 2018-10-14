@@ -1,28 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Contracts;
-using Entities;
-using Entities.ExtendedModels;
-using Entities.Extensions;
-using Entities.Models;
-
-namespace Repository
+﻿namespace Repository
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Contracts;
+    using Entities;
+    using Entities.ExtendedModels;
+    using Entities.Extensions;
+    using Entities.Models;
+
     public class GroupsRepository : RepositoryBase<Groups>, IGroupsRepository
     {
         public GroupsRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
 
-        public void CreateGroup(Groups owner)
+        public void CreateGroup(Groups group)
         {
-            owner.GroupdId = Guid.NewGuid();
-            Create(owner);
+            group.GroupdId = Guid.NewGuid();
+            Create(group);
             Save();
         }
 
-        public IEnumerable<Groups> GetAllGroupss()
+        public IEnumerable<Groups> GetAllGroups()
         {
             return FindAll()
               .OrderBy(ow => ow.GroupName);
@@ -40,21 +40,20 @@ namespace Repository
             return new GroupsExtended(GetGroupsById(Id))
             { 
                 Breeds = RepositoryContext.Breeds
-                .Where(a => a.GroupdId == Id)
-                
+                    .Select(a => a.GroupdId == Id)
             };
         }
 
-        public void UpdateGroup(Groups dbOwner, Groups owner)
+        public void UpdateGroup(Groups dbgroup, Groups group)
         {
-            dbOwner.Map(owner);
-            Update(dbOwner);
+            dbgroup.Map(group);
+            Update(dbgroup);
             Save();
         }
 
-        public void DeleteGroup(Groups owner)
+        public void DeleteGroup(Groups group)
         {
-            Delete(owner);
+            Delete(group);
             Save();
         }
     }

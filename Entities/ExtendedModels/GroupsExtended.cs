@@ -1,21 +1,21 @@
 ﻿using Entities.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Entities.ExtendedModels
 {
-    public class GroupsExtended
+    public class GroupsExtended : Groups
     {
-        public Groups Groups { get; }
-
-        public IEnumerable<Breeds> Breeds { get; set; }
+        public IEnumerable<bool> Breeds { get; set; }
 
         public GroupsExtended() { }
 
         public GroupsExtended(Groups groups)
         {
-            Groups = groups;
+            GroupName = groups.GroupName;
+            GroupdId = groups.GroupdId;
         }
     }
 }

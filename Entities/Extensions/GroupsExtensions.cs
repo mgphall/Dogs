@@ -1,15 +1,13 @@
 ﻿using Entities.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Entities.Extensions
 {
     public static class GroupsExtensions
     {
-        public static void Map(this Groups dbOwner, Groups owner)
+        public static void Map(this Groups dbgroup, Groups group)
         {
-            dbOwner.GroupName = owner.GroupName;
+            dbgroup.GroupName = group.GroupName;
         }
 
         public static bool IsEmptyObject(this IEntity entity)

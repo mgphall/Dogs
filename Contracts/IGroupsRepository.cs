@@ -8,10 +8,10 @@
     public interface IGroupsRepository : IRepositoryBase<Groups>
     {
         Groups GetGroupsById(Guid id);
-        IEnumerable<Groups> GetAllGroupss();
-        GroupsExtended GetGroupsWithDetails(Guid ownerId);
-        void CreateGroup(Groups owner);
-        void UpdateGroup(Groups dbOwner, Groups owner);
-        void DeleteGroup(Groups owner);
+        IEnumerable<Groups> GetAllGroups();
+        GroupsExtended GetGroupsWithDetails(Guid groupId);
+        void CreateGroup(Groups group);
+        void UpdateGroup(Groups dbgroup, Groups group);
+        void DeleteGroup(Groups group);
     }
 }

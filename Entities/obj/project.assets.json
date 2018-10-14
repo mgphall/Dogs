@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\matthew\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

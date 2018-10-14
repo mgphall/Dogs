@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-offset-10 col-md-2">
+      <a [routerLink]="['/groups/create']">Create groups</a>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-12">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>groups name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let groups of groups">
+              <td>{{groups.groupName}}</td>
+            <td>{{groups.groupdId}}</td>
+            <td>
+                <button type="button" id="details" class="btn btn-default" (click)="getGroupsDetails(groups.groupdId)">Details</button>
+            </td>
+
+            <td>
+              <button type="button" id="update" class="btn btn-success" (click)="redirectToUpdatePage(groups.groupdId)">Update</button>
+            </td>
+
+            <td>
+                <button type="button" id="delete" class="btn btn-danger" (click)="redirectToDeletePage(groups.groupdId)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

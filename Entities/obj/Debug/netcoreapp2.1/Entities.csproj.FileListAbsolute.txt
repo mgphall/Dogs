@@ -10,3 +10,14 @@ c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Entities\b
 c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Entities\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
 c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Entities\obj\Debug\netcoreapp2.1\Entities.csproj.CopyComplete
 c:\users\matthew\documents\visual studio 2017\Projects\DogBreedServer\Entities\obj\Debug\netcoreapp2.1\Entities.csprojAssemblyReference.cache
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\obj\Debug\netcoreapp2.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\obj\Debug\netcoreapp2.1\Entities.AssemblyInfoInputs.cache
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\obj\Debug\netcoreapp2.1\Entities.AssemblyInfo.cs
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\obj\Debug\netcoreapp2.1\Entities.dll
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\obj\Debug\netcoreapp2.1\Entities.pdb
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\bin\Debug\netcoreapp2.1\Entities.deps.json
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\bin\Debug\netcoreapp2.1\Entities.dll
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\bin\Debug\netcoreapp2.1\Entities.pdb
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\obj\Debug\netcoreapp2.1\Entities.csproj.CopyComplete

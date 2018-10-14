@@ -722,11 +722,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\matthew\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -745,11 +745,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Contracts\\Contracts.csproj": {
-              "projectPath": "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Contracts\\Contracts.csproj"
+            "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Contracts\\Contracts.csproj"
             },
-            "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Entities\\Entities.csproj": {
-              "projectPath": "c:\\users\\matthew\\documents\\visual studio 2017\\Projects\\DogBreedServer\\Entities\\Entities.csproj"
+            "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\matthew\\Documents\\Visual Studio 2017\\MatthewsProjects\\DogBreedServer\\Dogs\\Entities\\Entities.csproj"
             }
           }
         }
