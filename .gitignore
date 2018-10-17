@@ -4,3 +4,7 @@
 \.vs/DogBreedServer/v15/Server/sqlite3/
 
 Contracts/bin/Debug/netcoreapp2\.1/
+
+*.pdb
+
+DogBreedServer/obj/Release/netcoreapp2\.1/
