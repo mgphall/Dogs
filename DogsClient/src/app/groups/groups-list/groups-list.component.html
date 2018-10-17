@@ -16,17 +16,17 @@
         <tbody>
           <tr *ngFor="let groups of groups">
               <td>{{groups.groupName}}</td>
-            <td>{{groups.groupdId}}</td>
+            <td>{{groups.groupId}}</td>
             <td>
-                <button type="button" id="details" class="btn btn-default" (click)="getGroupsDetails(groups.groupdId)">Details</button>
+                <button type="button" id="details" class="btn btn-default" (click)="getGroupsDetails(groups.groupId)">Details</button>
             </td>
 
             <td>
-              <button type="button" id="update" class="btn btn-success" (click)="redirectToUpdatePage(groups.groupdId)">Update</button>
+              <button type="button" id="update" class="btn btn-success" (click)="redirectToUpdatePage(groups.groupId)">Update</button>
             </td>
 
             <td>
-                <button type="button" id="delete" class="btn btn-danger" (click)="redirectToDeletePage(groups.groupdId)">Delete</button>
+                <button type="button" id="delete" class="btn btn-danger" (click)="redirectToDeletePage(groups.groupId)">Delete</button>
             </td>
           </tr>
         </tbody>

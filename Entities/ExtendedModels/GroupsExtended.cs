@@ -8,14 +8,14 @@ namespace Entities.ExtendedModels
 {
     public class GroupsExtended : Groups
     {
-        public IEnumerable<bool> Breeds { get; set; }
+        public IEnumerable<Breeds> Breeds { get; set; }
 
         public GroupsExtended() { }
 
         public GroupsExtended(Groups groups)
         {
             GroupName = groups.GroupName;
-            GroupdId = groups.GroupdId;
+            GroupId = groups.GroupId;
         }
     }
 }

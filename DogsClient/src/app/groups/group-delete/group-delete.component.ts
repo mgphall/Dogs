@@ -36,7 +36,7 @@ ngOnInit() {
   }
 
   public deleteGroup() {
-    const deleteUrl: string = `api/groups/${this.group.groupdId}`;
+    const deleteUrl: string = `api/groups/${this.group.groupId}`;
     this.repository.delete(deleteUrl)
       .subscribe(res => {
         $('#successModal').modal();

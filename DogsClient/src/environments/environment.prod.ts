@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  urlAddress: 'http://www.accountowner.com'
+  urlAddress: 'https://dogbreedserver20181016094806.azurewebsites.net'
 };

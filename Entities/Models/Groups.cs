@@ -8,7 +8,7 @@
     public class Groups
     {
         [Key]
-        public Guid GroupdId { get; set; }
+        public Guid GroupId { get; set; }
 
         [Required(ErrorMessage = "Group is required")]
         [StringLength(60, ErrorMessage = "Group can't be longer than 60 characters")]

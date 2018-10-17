@@ -1,0 +1,16 @@
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\bin\Release\netcoreapp2.1\Repository.deps.json
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\bin\Release\netcoreapp2.1\Repository.dll
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\bin\Release\netcoreapp2.1\Repository.pdb
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\bin\Release\netcoreapp2.1\Contracts.dll
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\bin\Release\netcoreapp2.1\Entities.dll
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\bin\Release\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\bin\Release\netcoreapp2.1\Contracts.pdb
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\bin\Release\netcoreapp2.1\Entities.pdb
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\bin\Release\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\obj\Release\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\obj\Release\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\obj\Release\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\obj\Release\netcoreapp2.1\Repository.AssemblyInfo.cs
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\obj\Release\netcoreapp2.1\Repository.csproj.CopyComplete
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\obj\Release\netcoreapp2.1\Repository.dll
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Repository\obj\Release\netcoreapp2.1\Repository.pdb

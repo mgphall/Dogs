@@ -6,5 +6,6 @@
   <PropertyGroup>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
     <ShowAllFiles>true</ShowAllFiles>
+    <NameOfLastUsedPublishProfile>DogBreedServer20181016094806 - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

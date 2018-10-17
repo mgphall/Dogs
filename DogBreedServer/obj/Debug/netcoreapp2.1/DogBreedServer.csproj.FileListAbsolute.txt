@@ -38,3 +38,4 @@ C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Do
 C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\DogBreedServer\obj\Debug\netcoreapp2.1\DogBreedServer.csproj.CopyComplete
 C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\DogBreedServer\obj\Debug\netcoreapp2.1\DogBreedServer.dll
 C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\DogBreedServer\obj\Debug\netcoreapp2.1\DogBreedServer.pdb
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\DogBreedServer\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

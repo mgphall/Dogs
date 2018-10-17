@@ -73,7 +73,7 @@ export class GroupUpdateComponent implements OnInit {
 
     this.groups.groupName = groupFormValue.name;
 
-    const apiUrl = `api/groups/${this.groups.groupdId}`;
+    const apiUrl = `api/groups/${this.groups.groupId}`;
     this.repository.update(apiUrl, this.groups)
       .subscribe(res => {
         $('#successModal').modal();

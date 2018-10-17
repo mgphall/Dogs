@@ -55,7 +55,7 @@ export class BreedCreateComponent implements OnInit {
   private executeGroupCreation(breedFormValue) {
     const breed: CreateBreed = {
       Breed : breedFormValue.name,
-       groupdId : breedFormValue.groupid
+       groupId : breedFormValue.groupid
     };
     const apiUrl = 'api/breeds';
     this.repository.create(apiUrl, breed)

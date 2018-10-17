@@ -69,7 +69,7 @@ namespace DogBreedServerTests
             var res = new Groups
             {
                 GroupName = "NewBreed",
-                GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234"),
+                GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234"),
               
             };
 
@@ -113,7 +113,7 @@ namespace DogBreedServerTests
             var res = new Groups()
             {
                 GroupName = "NewGroup",
-                GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234")
+                GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234")
             };
             // Act
             var okResult = _controller.UpdateGroup(updateId, res);
@@ -130,7 +130,7 @@ namespace DogBreedServerTests
             var res = new Groups()
             {
                 GroupName = "NewGroup",
-                GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234")
+                GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234")
             };
             // Act
             var okResult = _controller.UpdateGroup(invailed, res);

@@ -21,3 +21,4 @@ C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Do
 C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
 C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\obj\Debug\netcoreapp2.1\Entities.csproj.CopyComplete
+C:\Users\matthew\Documents\Visual Studio 2017\MatthewsProjects\DogBreedServer\Dogs\Entities\obj\Debug\netcoreapp2.1\Entities.csprojAssemblyReference.cache

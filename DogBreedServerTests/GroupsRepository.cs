@@ -16,11 +16,11 @@ namespace DogBreedServerTests
     {
         public List<Groups> _groups = new List<Groups>
         {
-            new Groups { GroupName = "randoms", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200") },
-            new Groups { GroupName = "spainal Group", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c201")},
-            new Groups { GroupName = "RottieGroup", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c202")},
-            new Groups { GroupName = "JackGroup", GroupdId= new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c203") },
-            new Groups { GroupName = "Doodles", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c204") }
+            new Groups { GroupName = "randoms", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200") },
+            new Groups { GroupName = "spainal Group", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c201")},
+            new Groups { GroupName = "RottieGroup", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c202")},
+            new Groups { GroupName = "JackGroup", GroupId= new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c203") },
+            new Groups { GroupName = "Doodles", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c204") }
         };
 
         public List<Breeds> _breeds = new List<Breeds>
@@ -34,7 +34,7 @@ namespace DogBreedServerTests
 
         public Groups GetGroupsById(Guid id)
         {
-          return  _groups.FirstOrDefault(g => g.GroupdId == id);
+          return  _groups.FirstOrDefault(g => g.GroupId == id);
         }
 
         public IEnumerable<Groups> GetAllGroups()
@@ -47,7 +47,7 @@ namespace DogBreedServerTests
             return new GroupsExtended(GetGroupsById(groupId))
             {
                 Breeds = _breeds
-                    .Select(a => a.GroupdId == groupId)
+                    .Where(a => a.GroupdId == groupId)
             };
         }
 
@@ -58,10 +58,10 @@ namespace DogBreedServerTests
 
         public void UpdateGroup(Groups dbgroup, Groups group)
         {
-            var resultBreed = _groups.First(b => b.GroupdId == dbgroup.GroupdId);
+            var resultBreed = _groups.First(b => b.GroupId == dbgroup.GroupId);
 
             resultBreed.GroupName = group.GroupName;
-            resultBreed.GroupdId = group.GroupdId;
+            resultBreed.GroupId = group.GroupId;
         }
 
         public void DeleteGroup(Groups @group)

@@ -107,7 +107,7 @@
 
                 _repository.Groups.CreateGroup(group);
 
-                return CreatedAtRoute("GroupsById", new { id = group.GroupdId }, group);
+                return CreatedAtRoute("GroupsById", new { id = group.GroupId }, group);
             }
             catch (Exception ex)
             {

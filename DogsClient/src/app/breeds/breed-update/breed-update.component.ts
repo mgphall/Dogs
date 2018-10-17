@@ -67,7 +67,7 @@ export class BreedUpdateComponent implements OnInit {
   }
 
   get filterSelectedGroup() {
-    return this.groups.filter( x => x.groupdId === this.breed.groupdId).some[1];
+    return this.groups.filter( x => x.groupId === this.breed.groupId).some[1];
   }
 
   public redirectToBreedList() {

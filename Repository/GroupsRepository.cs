@@ -17,7 +17,7 @@
 
         public void CreateGroup(Groups group)
         {
-            group.GroupdId = Guid.NewGuid();
+            group.GroupId = Guid.NewGuid();
             Create(group);
             Save();
         }
@@ -30,7 +30,7 @@
 
         public Groups GetGroupsById(Guid id)
         {
-            return FindByCondition(b => b.GroupdId.Equals(id))
+            return FindByCondition(b => b.GroupId.Equals(id))
                 .DefaultIfEmpty(new Groups())
             .FirstOrDefault();
         }
@@ -40,7 +40,7 @@
             return new GroupsExtended(GetGroupsById(Id))
             { 
                 Breeds = RepositoryContext.Breeds
-                    .Select(a => a.GroupdId == Id)
+                    .Where(a => a.GroupdId == Id)
             };
         }
 

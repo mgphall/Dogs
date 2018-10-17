@@ -1,4 +1,4 @@
 export interface CreateBreed {
   Breed: string;
-  groupdId: string;
+  groupId: string;
 }

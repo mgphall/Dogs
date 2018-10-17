@@ -15,7 +15,7 @@ namespace Entities.Models
         [StringLength(60, ErrorMessage = "Breed can't be longer than 60 characters")]
         public string Breed { get; set; }
 
-        [Required(ErrorMessage = "GroupdId is required")]
+        [Required(ErrorMessage = "GroupId is required")]
         public Guid GroupdId { get; set; }
     }
 }
