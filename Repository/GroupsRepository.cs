@@ -40,7 +40,7 @@
             return new GroupsExtended(GetGroupsById(Id))
             { 
                 Breeds = RepositoryContext.Breeds
-                    .Where(a => a.GroupdId == Id)
+                    .Where(a => a.GroupId == Id)
             };
         }
 

@@ -24,11 +24,11 @@ namespace DogBreedServerTests
 
         public List<Breeds> _breeds = new List<Breeds>
         {
-            new Breeds { Breed = "", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200") },
-            new Breeds { Breed = "JackR", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c201") },
-            new Breeds { Breed = "Rottie", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c202") },
-            new Breeds { Breed = "JackR", GroupdId= new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c203") },
-            new Breeds { Breed = "JackR", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c204") }
+            new Breeds { Breed = "", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200") },
+            new Breeds { Breed = "JackR", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c201") },
+            new Breeds { Breed = "Rottie", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c202") },
+            new Breeds { Breed = "JackR", GroupId= new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c203") },
+            new Breeds { Breed = "JackR", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c204") }
         };
 
         public Groups GetGroupsById(Guid id)
@@ -46,7 +46,7 @@ namespace DogBreedServerTests
             return new GroupsExtended(GetGroupsById(groupId))
             {
                 Breeds = _breeds
-                    .Where(a => a.GroupdId == groupId)
+                    .Where(a => a.GroupId == groupId)
             };
         }
 

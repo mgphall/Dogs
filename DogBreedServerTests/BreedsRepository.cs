@@ -11,17 +11,17 @@ namespace DogBreedServerTests
     {
         public List<Breeds> _breeds = new List<Breeds>
         {
-            new Breeds { Breed = "", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200") },
-            new Breeds { Breed = "JackR", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c201") },
-            new Breeds { Breed = "Rottie", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c202") },
-            new Breeds { Breed = "JackR", GroupdId= new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c203") },
-            new Breeds { Breed = "JackR", GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c204") }
+            new Breeds { Breed = "", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200") },
+            new Breeds { Breed = "JackR", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c201") },
+            new Breeds { Breed = "Rottie", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c202") },
+            new Breeds { Breed = "JackR", GroupId= new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c203") },
+            new Breeds { Breed = "JackR", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"), Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c204") }
         };
 
    
         public IEnumerable<Breeds> BreedsByGroups(Guid groupId)
         {
-            return _breeds.Where(a => a.GroupdId == groupId);
+            return _breeds.Where(a => a.GroupId == groupId);
         }
 
         public void CreateBreed(Breeds breed)
@@ -51,7 +51,7 @@ namespace DogBreedServerTests
 
             resultBreed.Id = breed.Id;
             resultBreed.Breed = breed.Breed;
-            resultBreed.GroupdId = breed.GroupdId;
+            resultBreed.GroupId = breed.GroupId;
         }
 
        

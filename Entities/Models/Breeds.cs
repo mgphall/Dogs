@@ -16,6 +16,6 @@ namespace Entities.Models
         public string Breed { get; set; }
 
         [Required(ErrorMessage = "GroupId is required")]
-        public Guid GroupdId { get; set; }
+        public Guid GroupId { get; set; }
     }
 }

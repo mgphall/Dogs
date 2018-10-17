@@ -24,7 +24,7 @@ namespace Repository
 
         public IEnumerable<Breeds> BreedsByGroups(Guid groupId)
         {
-            return FindByCondition(a => a.GroupdId.Equals(groupId));
+            return FindByCondition(a => a.GroupId.Equals(groupId));
         }
 
         public IEnumerable<Breeds> GetAllBreeds()

@@ -24,15 +24,15 @@ export class BreedUpdateComponent implements OnInit {
 
   ngOnInit() {
     this.breedForm = new FormGroup({
-      name: new FormControl('', [Validators.required, Validators.maxLength(60)])
+      name: new FormControl('', [Validators.required, Validators.maxLength(60)]),
+      groupid : new FormControl('', [Validators.required])
     });
 
     this.getAllGroups();
     this.getBreedById();
 
-    this.nrSelect = this.filterSelectedGroup();
-
     }
+
   getBreedById(): any {
     const breedId: string = this.activeRoute.snapshot.params['id'];
 
@@ -66,10 +66,6 @@ export class BreedUpdateComponent implements OnInit {
     return false;
   }
 
-  get filterSelectedGroup() {
-    return this.groups.filter( x => x.groupId === this.breed.groupId).some[1];
-  }
-
   public redirectToBreedList() {
     this.router.navigate(['/breeds/list']);
   }
@@ -95,6 +91,7 @@ export class BreedUpdateComponent implements OnInit {
   private executeBreedUpdate(breedFormValue) {
 
     this.breed.breed = breedFormValue.name;
+    this.breed.groupId = breedFormValue.groupid;
 
     const apiUrl = `api/breeds/${this.breed.id}`;
     this.repository.update(apiUrl, this.breed)

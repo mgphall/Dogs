@@ -10,7 +10,7 @@ namespace Entities.Extensions
         public static void Map(this Breeds dbbreed, Breeds breed)
         {
             dbbreed.Breed = breed.Breed;
-            dbbreed.GroupdId = breed.GroupdId;
+            dbbreed.GroupId = breed.GroupId;
         }
 
         public static bool IsEmptyObject(this IEntity entity)

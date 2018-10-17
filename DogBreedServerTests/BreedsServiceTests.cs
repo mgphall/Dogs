@@ -66,7 +66,7 @@ namespace DogBreedServerTests
             var res = new Breeds
             {
                 Breed = "NewBreed",
-                GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234"),
+                GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234"),
                 Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd94321")
             };
 
@@ -109,7 +109,7 @@ namespace DogBreedServerTests
             var res = new Breeds
             {
                 Breed = "NewBreed",
-                GroupdId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234"),
+                GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234"),
                 Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd94321")
             };
             // Act
@@ -164,7 +164,7 @@ namespace DogBreedServerTests
             var res = new Breeds
             {
                 Breed =  string.Empty,
-                GroupdId =  new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234"),
+                GroupId =  new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd91234"),
                 Id = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd94321")
             };
 
