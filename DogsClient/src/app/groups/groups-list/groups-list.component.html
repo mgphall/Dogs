@@ -10,13 +10,12 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>groups name</th>
+            <th>Groups name</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let groups of groups">
               <td>{{groups.groupName}}</td>
-            <td>{{groups.groupId}}</td>
             <td>
                 <button type="button" id="details" class="btn btn-default" (click)="getGroupsDetails(groups.groupId)">Details</button>
             </td>
