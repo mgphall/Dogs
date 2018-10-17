@@ -1,0 +1,415 @@
+{
+	"info": {
+		"_postman_id": "5f10ec27-b6f4-45f8-b0d0-9d8b0602cb4e",
+		"name": "dogs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BreedsGetAll",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ebd4053-1511-4571-83cf-0016a2f3a697",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"// example using response assertions\r",
+							"pm.test(\"response should be okay to process\", function () { \r",
+							"    pm.response.to.not.be.error; \r",
+							"    pm.response.to.have.jsonBody(\"\"); \r",
+							"    pm.response.to.not.have.jsonBody(\"error\"); \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"groupName\":\"Irish\"}"
+				},
+				"url": {
+					"raw": "{{url}}/api/breeds/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"breeds",
+						""
+					]
+				},
+				"description": "create a group for dog breeds"
+			},
+			"response": []
+		},
+		{
+			"name": "BreedsDelete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ebd4053-1511-4571-83cf-0016a2f3a697",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"// example using response assertions\r",
+							"pm.test(\"response should be okay to process\", function () { \r",
+							"    pm.response.to.not.be.error; \r",
+							"    pm.response.to.have.jsonBody(\"\"); \r",
+							"    pm.response.to.not.have.jsonBody(\"error\"); \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"groupName\":\"Irish\"}"
+				},
+				"url": {
+					"raw": "{{url}}/api/breeds/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"breeds",
+						""
+					]
+				},
+				"description": "create a group for dog breeds"
+			},
+			"response": []
+		},
+		{
+			"name": "BreedGetById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ebd4053-1511-4571-83cf-0016a2f3a697",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"// example using response assertions\r",
+							"pm.test(\"response should be okay to process\", function () { \r",
+							"    pm.response.to.not.be.error; \r",
+							"    pm.response.to.have.jsonBody(\"\"); \r",
+							"    pm.response.to.not.have.jsonBody(\"error\"); \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"groupName\":\"Irish\"}"
+				},
+				"url": {
+					"raw": "{{url}}/api/breeds/4105ef87-94b4-40bc-920f-8c1db25db729",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"breeds",
+						"4105ef87-94b4-40bc-920f-8c1db25db729"
+					]
+				},
+				"description": "create a group for dog breeds"
+			},
+			"response": []
+		},
+		{
+			"name": "BreedCreate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ebd4053-1511-4571-83cf-0016a2f3a697",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"pm.test(\"response should be okay to process\", function () { \r",
+							"    pm.response.to.not.be.error; \r",
+							"    pm.response.to.have.jsonBody(\"\"); \r",
+							"    pm.response.to.not.have.jsonBody(\"error\"); \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Breed\":\"Test{{$timestamp}}\"}"
+				},
+				"url": {
+					"raw": "{{url}}/api/breeds/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"breeds",
+						""
+					]
+				},
+				"description": "create a group for dog breeds"
+			},
+			"response": []
+		},
+		{
+			"name": "GroupsGetAll",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ebd4053-1511-4571-83cf-0016a2f3a697",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"// example using response assertions\r",
+							"pm.test(\"response should be okay to process\", function () { \r",
+							"    pm.response.to.not.be.error; \r",
+							"    pm.response.to.have.jsonBody(\"\"); \r",
+							"    pm.response.to.not.have.jsonBody(\"error\"); \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Breed\":\"Test\"{{$timestamp}}}"
+				},
+				"url": {
+					"raw": "{{url}}/api/groups",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"groups"
+					]
+				},
+				"description": "create a group for dog breeds"
+			},
+			"response": []
+		},
+		{
+			"name": "GroupsGetById",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ebd4053-1511-4571-83cf-0016a2f3a697",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"// example using response assertions\r",
+							"pm.test(\"response should be okay to process\", function () { \r",
+							"    pm.response.to.not.be.error; \r",
+							"    pm.response.to.have.jsonBody(\"\"); \r",
+							"    pm.response.to.not.have.jsonBody(\"error\"); \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Breed\":\"Test\"{{$timestamp}}}"
+				},
+				"url": {
+					"raw": "{{url}}/api/groups",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"groups"
+					]
+				},
+				"description": "create a group for dog breeds"
+			},
+			"response": []
+		},
+		{
+			"name": "GroupDelete",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ebd4053-1511-4571-83cf-0016a2f3a697",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"// example using response assertions\r",
+							"pm.test(\"response should be okay to process\", function () { \r",
+							"    pm.response.to.not.be.error; \r",
+							"    pm.response.to.have.jsonBody(\"\"); \r",
+							"    pm.response.to.not.have.jsonBody(\"error\"); \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"groupName\":\"Irish\"}"
+				},
+				"url": {
+					"raw": "{{url}}/api/breeds/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"breeds",
+						""
+					]
+				},
+				"description": "create a group for dog breeds"
+			},
+			"response": []
+		},
+		{
+			"name": "GetGroupWIthBreedsDetails",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ebd4053-1511-4571-83cf-0016a2f3a697",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"// example using response assertions\r",
+							"pm.test(\"response should be okay to process\", function () { \r",
+							"    pm.response.to.not.be.error; \r",
+							"    pm.response.to.have.jsonBody(\"\"); \r",
+							"    pm.response.to.not.have.jsonBody(\"error\"); \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"disabled": false,
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/groups/{{groupid}}/Breeds",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"groups",
+						"{{groupid}}",
+						"Breeds"
+					]
+				},
+				"description": "create a group for dog breeds"
+			},
+			"response": []
+		}
+	]
+}

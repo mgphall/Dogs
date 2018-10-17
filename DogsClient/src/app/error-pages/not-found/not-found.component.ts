@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotFoundComponent implements OnInit {
 
-  public notFoundText: string = `404 SORRY COULDN'T FIND IT!!!`
+  public notFoundText: string = `No content found`
 
   constructor() { }
 
