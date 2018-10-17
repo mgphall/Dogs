@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using Contracts;
-using DogBreedServer.Controllers;
-using Entities;
 using Entities.ExtendedModels;
 using Entities.Models;
-using Repository;
 
 namespace DogBreedServerTests
 {
-    public class GroupsRepository : IGroupsRepository
+    public class GroupsRepository : IGroupsRepository 
     {
+        //Todo mock 
+
+
         public List<Groups> _groups = new List<Groups>
         {
             new Groups { GroupName = "randoms", GroupId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200") },
@@ -62,41 +61,6 @@ namespace DogBreedServerTests
 
             resultBreed.GroupName = group.GroupName;
             resultBreed.GroupId = group.GroupId;
-        }
-
-        public void DeleteGroup(Groups @group)
-        {
-            _groups.Remove(group);
-        }
-
-        public IEnumerable<Groups> FindAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Groups> FindByCondition(Expression<Func<Groups, bool>> expression)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Create(Groups entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Groups entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Delete(Groups entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Save()
-        {
-            throw new NotImplementedException();
         }
     }
 }

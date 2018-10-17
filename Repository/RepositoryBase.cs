@@ -11,7 +11,7 @@ namespace Repository
     {
         protected RepositoryContext RepositoryContext { get; set; }
 
-        public RepositoryBase(RepositoryContext repositoryContext)
+        protected RepositoryBase(RepositoryContext repositoryContext)
         {
             this.RepositoryContext = repositoryContext;
         }

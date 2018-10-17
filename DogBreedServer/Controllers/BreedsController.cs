@@ -48,7 +48,7 @@ namespace DogBreedServer.Controllers
 
                 if (!breed.Any())
                 {
-                    _logger.LogError($"group with id: {id}, hasn't been found in db.");
+                    _logger.LogError($"breed with id: {id}, hasn't been found in db.");
                     return NotFound();
                 }
                 else
@@ -59,7 +59,7 @@ namespace DogBreedServer.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong inside GetgroupById action: {ex.Message}");
+                _logger.LogError($"Something went wrong inside GetbreedById action: {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
         }
@@ -95,13 +95,13 @@ namespace DogBreedServer.Controllers
             {
                 if (breed == null || breed.Breed == string.Empty)
                 {
-                    _logger.LogError("group object sent from client is null.");
-                    return BadRequest("group object is null");
+                    _logger.LogError("breed object sent from client is null.");
+                    return BadRequest("breed object is null");
                 }
 
                 if (!ModelState.IsValid)
                 {
-                    _logger.LogError("Invalid group object sent from client.");
+                    _logger.LogError("Invalid breed object sent from client.");
                     return BadRequest("Invalid model object");
                 }
 
@@ -123,20 +123,20 @@ namespace DogBreedServer.Controllers
             {
                 if (breed == null)
                 {
-                    _logger.LogError("group object sent from client is null.");
-                    return BadRequest("group object is null");
+                    _logger.LogError("breed object sent from client is null.");
+                    return BadRequest("breed object is null");
                 }
 
                 if (!ModelState.IsValid)
                 {
-                    _logger.LogError("Invalid group object sent from client.");
+                    _logger.LogError("Invalid breed object sent from client.");
                     return BadRequest("Invalid model object");
                 }
 
                 var dbbreed = _repository.Breeds.GetBreedsById(id);
                 if (dbbreed == null)
                 {
-                    _logger.LogError($"group with id: {id}, hasn't been found in db.");
+                    _logger.LogError($"breed with id: {id}, hasn't been found in db.");
                     return NotFound();
                 }
 
@@ -146,7 +146,7 @@ namespace DogBreedServer.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong inside Updategroup action: {ex.Message}");
+                _logger.LogError($"Something went wrong inside Update breed action: {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
         }
@@ -159,7 +159,7 @@ namespace DogBreedServer.Controllers
                 var breed = _repository.Breeds.GetBreedsById(id);
                 if (breed == null)
                 {
-                    _logger.LogError($"group with id: {id}, hasn't been found in db.");
+                    _logger.LogError($"breed with id: {id}, hasn't been found in db.");
                     return NotFound();
                 }
                 
@@ -170,7 +170,7 @@ namespace DogBreedServer.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong inside Deletegroup action: {ex.Message}");
+                _logger.LogError($"Something went wrong inside Delete breed action: {ex.Message}");
                 return StatusCode(500, "Internal server error");
             }
         }

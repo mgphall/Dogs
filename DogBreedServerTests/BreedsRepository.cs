@@ -24,34 +24,14 @@ namespace DogBreedServerTests
             return _breeds.Where(a => a.GroupdId == groupId);
         }
 
-        public void Create(Breeds entity)
-        {
-            throw new NotImplementedException();
-        }
-
         public void CreateBreed(Breeds breed)
         {
             _breeds.Add(breed);
         }
 
-        public void Delete(Breeds entity)
-        {
-            throw new NotImplementedException();
-        }
-
         public void DeleteBreed(Breeds group)
         {
             _breeds.Remove(group);
-        }
-
-        public IEnumerable<Breeds> FindAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Breeds> FindByCondition(Expression<Func<Breeds, bool>> expression)
-        {
-            throw new NotImplementedException();
         }
 
         public IEnumerable<Breeds> GetAllBreeds()
@@ -63,16 +43,6 @@ namespace DogBreedServerTests
         {
             return _breeds.Where(a => a.Id == id)
                 .FirstOrDefault();
-        }
-
-        public void Save()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Breeds entity)
-        {
-            throw new NotImplementedException();
         }
 
         public void UpdateBreed(Breeds dbbreed, Breeds breed)
